@@ -2,13 +2,13 @@ pipeline {
     agent {
         docker {
             image 'maven:3-alpine'
-            args '-v /tmp:/root/.m2' 
+            args '-v /tmp:/root/.m2'
         }
     }
     stages {
         stage('Build') {
             steps {
-                sh './buildScript1.sh'
+                sh 'docker -v'
             }
         }
     }
