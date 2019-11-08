@@ -1,5 +1,3 @@
-@Library('tools') _
-
 pipeline {
   stages {
     stage("stage 1") {
