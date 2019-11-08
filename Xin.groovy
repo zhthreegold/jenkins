@@ -7,4 +7,6 @@ pipeline {
         sh 'docker -v'
         sh 'docker-compose -v'
       }
+    }
+  }
 }
